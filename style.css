@@ -3,6 +3,10 @@ h1 {
     color: mediumvioletred;
 }
 
+h2 {
+    color: rebeccapurple;
+}
+
 p {
     font-family: Helvetica, sans-serif;
 }
