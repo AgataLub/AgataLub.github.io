@@ -1,5 +1,22 @@
+body {
+    font-family: Helvetica, sans-serif;
+    top: 0px;
+    left: 0px;
+}
+
+header {
+    width: 100vw;
+    height: 70vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: lightgray;
+    position: relative;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: mediumvioletred;
 }
 
@@ -11,6 +28,36 @@ h3 {
     color: gray;
 }
 
-p {
-    font-family: Helvetica, sans-serif;
+nav {
+    padding-top: 1rem;
 }
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.header_title {
+    width: 20vw;
+}
+
+.top, footer {
+    text-align: center;
+}
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.block {
+    border: 1px solid black;
+    padding: 2rem;
+    width: 15vw;
+    height: 15vw;
+    margin: 2rem;
+}
+
