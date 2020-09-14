@@ -1,10 +1,26 @@
 /*fonts*/
+@import url("https://use.typekit.net/lom2fkq.css");
 
 /*colors*/
+:root {
+    --main-color: #319b86;
+    --cta-color: #f2ca5a;
+    --link-color: #df573e;
+    --link-hover: #f2ca5a;
+    --color-5: #f28e4c;
+    --main-text-color: #1b3642;
+    --secondary-text-color: #b5b5b5;
+
+    --primary-font: "brandon-grotesque", sans-serif;
+    --secondary-font: "cormorant-garamond", serif;
+    --special-font: "turbinado-pro", sans-serif;
+
+    --white-space: 1rem;
+}
 
 /*body elements*/
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: var(--primary-font);
     top: 0px;
     left: 0px;
 }
@@ -17,7 +33,7 @@ header {
     background-position: center;
     background-size: cover;
     z-index: 2;
-    position:relative;
+    position: relative;
 }
 
 .header_background {
@@ -29,9 +45,9 @@ header {
     background-size: cover;
     background-color: gray;
     position: absolute;
-    left:0px;
-    top:0px;
-    right:0px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
     z-index: 1;
 }
 
@@ -44,6 +60,8 @@ nav > ul {
     justify-content: space-around;
     list-style-type: none;
     text-transform: uppercase;
+    align-items:center;
+    margin:0;
 }
 
 .header_title {
@@ -52,14 +70,15 @@ nav > ul {
     padding-top: 2em;
 }
 
-.top, footer {
+.top,
+footer {
     text-align: center;
 }
 
 .featured {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
 }
 
 .block {
@@ -80,15 +99,39 @@ footer {
 
 /*buttons*/
 .regular {
-    background: green;
-    border-radius: 30px;
-    border: 1px green solid;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 1em;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font: 500 1.25em/1 var(--primary-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    border-style: solid;
+    border-radius: 2rem;
+    color: var(--main-color);
+    background: var(--cta-color);
+    border: 0rem;
 }
+
+button:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+button:active {
+    background-color: var(--main-color);
+}
+
+/*
+.secondary-button {
+    background: rgba(255, 0, 0, 0);
+    border-color: var(--cta-color);
+    border: 0.2rem;
+    border-style: solid;
+color: var(--cta-color);}
+*/
 
 /*links*/
 nav > ul > li > a {
@@ -97,23 +140,61 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 nav > ul > li > a:active {
     text-decoration: line-through;
 }
 
-/*headers*/
+
+a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--link-hover-highlight-color) 50%);
+    background-repeat: repeat-x;
+    background-position: 0% 70%;
+    background-size: 200% 40%;
+    transition: background-position 0.5s ease-out;
+}
+
+a:hover {
+    background-position: -100% 70%;
+}
+
+/*text*/
 h1 {
-    font-size: 3rem;
-    color: mediumvioletred;
+    font-family: var(--special-font);
+    font-size: 4rem;
 }
 
 h2 {
-    color: rebeccapurple;
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 h3 {
-    color: gray;
+    font-family: var(--secondary-font);
+}
+
+p {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    max-width: 960px;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-family: var(--secondary-font);
+    font-style: italic;
+}
+
+/*images*/
+.logo {
+    height: 150px;
+    width: auto;
 }

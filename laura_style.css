@@ -1,0 +1,484 @@
+/* change these */
+
+@import url("https://use.typekit.net/ofv6hwf.css");
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently,
+name the variables differently,
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change these */
+:root {
+    --main-color: #319b86;
+    --cta-color: #f2ca5a;
+    --link-color: #df573e;
+    --link-hover-highlight-color: #f2ca5a;
+    --color-5: #f28e4c;
+/*    --color-6: #;*/
+
+    --primary-font: "brandon-grotesque", sans-serif;
+    --secondary-font: "cormorant-garamond", serif;
+    --special-font: "turbinado-pro", sans-serif;
+    --main-text-color: #1b3642;
+/*    --secondary-text-color: #b5b5b5;*/
+
+    --white-space: 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+.img-background {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+em {
+    font-family: var(--secondary-font);
+}
+
+button {
+    transition: all 3s;
+}
+
+a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--link-hover-highlight-color) 50%);
+    background-repeat: repeat-x;
+    background-position: 0% 70%;
+    background-size: 200% 40%;
+    transition: background-position 0.5s ease-out;
+}
+
+a:hover {
+    background-position: -100% 70%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: var(--main-color);
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+    margin: 0;
+    padding: calc(2 * var(--white-space));
+}
+
+.icons {
+    margin-left: 35px;
+}
+
+.full-width {
+    background: var(--main-color);
+    color: white;
+    width: 100%;
+}
+
+.header-wrapper h1,
+.icons {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    padding-right: 0.75em;
+    font-weight: bold;
+    color: white;
+}
+
+.header-wrapper h2 {
+    font-size: 2em;
+    color: var(--link-hover-highlight-color);
+    font-weight: bold;
+    margin: var(--white-space) 0;
+}
+
+.header-wrapper h4 {
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+
+.header-wrapper h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+main {
+    padding: calc(2 * var(--white-space));
+}
+
+section {
+    margin-bottom: calc(4 * var(--white-space));
+}
+
+.section-heading {
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    margin: 0;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.swatches li {
+    margin-right: 5vw;
+    margin: 1em;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+.color-swatch-1 {
+    background-color: var(--main-color);
+}
+
+.color-swatch-2 {
+    background-color: var(--color-5);
+}
+
+.color-swatch-3 {
+    background-color: var(--cta-color);
+}
+
+.color-swatch-4 {
+    background-color: var(--link-color);
+}
+
+.color-swatch-5 {
+    background-color: var(--main-text-color);
+}
+
+.color-swatch-6 {
+    background-color: var(--color-6);
+}
+
+.textures li {
+    margin-right: 5vw;
+    margin: 1em;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+.texture-swatch-1 {
+    background: url(../img/pw_maze_white.png) top left repeat;
+}
+
+.texture-swatch-2 {
+    background: url(../img/subtle_grunge.png) top left repeat;
+}
+
+.texture-swatch-1 {
+    background: url(../img/pw_maze_white.png) top left repeat;
+}
+
+.texture-swatch-3 {
+    background: url(../img/white_paperboard.png) top left repeat;
+}
+
+.images ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.images li {
+    display: block;
+    /*margin-right: 5vw;*/
+    margin-bottom: 1rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bckgr-green {
+    background-color: var(--main-color);
+}
+
+button {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font: 500 1.25em/1 var(--primary-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+.primary-button {
+    color: var(--main-color);
+    background: var(--cta-color);
+    border: 0rem;
+
+}
+
+.secondary-button {
+    background: rgba(255, 0, 0, 0);
+    border-color: var(--cta-color);
+    border: 0.2rem;
+    border-style: solid;
+    color: var(--cta-color);
+}
+
+.white-text {
+    color: white;
+}
+
+/*
+button:focus,
+button:active,
+button:focus-within {
+    outline: 0;
+    border-radius: 4px;
+}
+*/
+
+.typography-main {
+    color: var(--main-text-color);
+    margin: 0;
+}
+
+.h1-sample {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.h2-sample {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+p.typography-sample {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    max-width: 960px;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    font-family: var(--primary-font);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+p[class*="font-details-"] {
+    margin-top: 0.5rem;
+    margin-bottom: calc(2 * var(--white-space));
+    font-size: 0.75rem;
+    font-family: var(--primary-font);
+    color: var(--secondary-text-color);
+    font-weight: 300;
+}
+
+.adjectives ul {
+    font-family: var(--special-font);
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.adjectives li {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.young {
+    color: var(--main-color);
+}
+
+.dynamic {
+    color: var(--cta-color);
+}
+
+.fresh {
+    color: var(--link-hover-highlight-color);
+}
+
+.energetic {
+    color: var(--link-color);
+}
+
+footer {
+    font-style: italic;
+}
+
+@media (min-width: 800px) {
+    /*
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+      grid-template-rows: ".typography-main .swatches"
+          ".adjectives .swatches"
+          ".textures .buttons";
+    grid-gap: 4rem;
+  }
+*/
+
+    main {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: [col1-start] 2fr [col2-start] 1fr [col2-end];
+        grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+    }
+
+    .typography-main {
+        grid-column: col1-start / col2-start;
+        grid-row: row1-start;
+    }
+
+    .adjectives {
+        grid-column: col1-start / col2-start;
+        grid-row: row2-start / row2-end;
+    }
+
+    .buttons {
+        grid-column: col1-start / col2-start;
+        grid-row: row3-start;
+    }
+
+    .buttons div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 2rem;
+    }
+
+    .swatches {
+        grid-column: col2-start / col2-end;
+        grid-row: row1-start;
+    }
+
+    .textures {
+        grid-column: col2-start / col2-end;
+        grid-row: row2-start;
+    }
+
+    .textures span {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .icons {
+        width: 8rem;
+        height: auto;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    /*
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: ".column";
+    }
+
+    .column {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: ".swatches .textures"
+            ".textures .typography-main"
+            ".buttons .adjectives";
+
+    }
+*/
+
+    /*
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 3fr;
+        grid-template-areas: ".header .typography-main .swatches";
+    }
+*/
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: ".header-wrapper main"
+            "footer footer";
+    }
+
+    .header-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+            ".icons";
+    }
+
+    /*
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+*/
+
+    /*
+  .textures li {
+    height: 15vw;
+  }
+*/
+}
+
+@media (min-width: 900px) {
+    .adjectives ul {
+        flex-direction: row;
+    }
+}
