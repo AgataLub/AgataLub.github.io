@@ -2,6 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     top: 0px;
     left: 0px;
+
 }
 
 header {
@@ -11,8 +12,24 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: lightgray;
-    position: relative;
+/*    background-color: lightgray;*/
+    z-index: 2;
+    position:relative;
+}
+
+.header_background {
+    width: 100vw;
+    height: 70vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: gray;
+    position: absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    z-index: 1;
 }
 
 h1 {
@@ -40,7 +57,9 @@ nav > ul {
 }
 
 .header_title {
-    width: 20vw;
+    width: 30vw;
+    padding-left: 2em;
+    padding-top: 2em;
 }
 
 .top, footer {
@@ -61,3 +80,10 @@ nav > ul {
     margin: 2rem;
 }
 
+footer {
+    border: 1px black solid;
+    width: 60%;
+    height: auto;
+    padding: 2rem;
+    margin: 0 auto;
+}
