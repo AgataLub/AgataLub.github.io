@@ -1,3 +1,8 @@
+/*fonts*/
+
+/*colors*/
+
+/*body elements*/
 body {
     font-family: Helvetica, sans-serif;
     top: 0px;
@@ -12,7 +17,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-/*    background-color: lightgray;*/
     z-index: 2;
     position:relative;
 }
@@ -30,19 +34,6 @@ header {
     top:0px;
     right:0px;
     z-index: 1;
-}
-
-h1 {
-    font-size: 3rem;
-    color: mediumvioletred;
-}
-
-h2 {
-    color: rebeccapurple;
-}
-
-h3 {
-    color: gray;
 }
 
 nav {
@@ -86,4 +77,44 @@ footer {
     height: auto;
     padding: 2rem;
     margin: 0 auto;
+}
+
+/*buttons*/
+.regular {
+    background: green;
+    border-radius: 30px;
+    border: 1px green solid;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+}
+
+/*links*/
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li > a:hover {
+    text-decoration:underline;
+}
+
+nav > ul > li > a:active {
+    text-decoration: line-through;
+}
+
+/*headers*/
+h1 {
+    font-size: 3rem;
+    color: mediumvioletred;
+}
+
+h2 {
+    color: rebeccapurple;
+}
+
+h3 {
+    color: gray;
 }
