@@ -11,7 +11,7 @@
     --main-text-color: #1b3642;
     --secondary-text-color: #b5b5b5;
 
-    --primary-font: "brandon-grotesque", sans-serif;
+    --primary-font: "sofia-pro", sans-serif;
     --secondary-font: "cormorant-garamond", serif;
     --special-font: "turbinado-pro", sans-serif;
 
@@ -39,11 +39,10 @@ header {
 .header_background {
     width: 100vw;
     height: 70vh;
-    background-image: url();
+    background-image: url(img/Background_Curve.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: gray;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -60,8 +59,8 @@ nav > ul {
     justify-content: space-around;
     list-style-type: none;
     text-transform: uppercase;
-    align-items:center;
-    margin:0;
+    align-items: center;
+    margin: 0;
 }
 
 .header_title {
@@ -147,9 +146,16 @@ nav > ul > li > a:active {
     text-decoration: line-through;
 }
 
+main > section > a {
+    font-family: var(--primary-font);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s;
+}
 
-a {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--link-hover-highlight-color) 50%);
+main > section > a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--link-hover) 50%);
     background-repeat: repeat-x;
     background-position: 0% 70%;
     background-size: 200% 40%;
@@ -174,7 +180,8 @@ h2 {
 }
 
 h3 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
+    font-size: 2rem;
 }
 
 p {
