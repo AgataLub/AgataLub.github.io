@@ -121,6 +121,15 @@ button:active {
     background-color: var(--main-color);
 }
 
+.search {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
 /*
 .secondary-button {
     background: rgba(255, 0, 0, 0);
@@ -184,7 +193,7 @@ h3 {
 
 h4 {
     font-family: var(--primary-font);
-    color:#707070;
+    color: #707070;
     font-size: 4rem;
     font-weight: 400;
     margin: 1rem;
