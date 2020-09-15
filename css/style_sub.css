@@ -190,6 +190,13 @@ h4 {
     margin: 1rem;
 }
 
+h5 {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    color:#707070;
+}
+
 p {
     font-family: var(--primary-font);
     line-height: 1.5;
