@@ -88,11 +88,62 @@ footer {
 }
 
 footer {
-    border: 1px black solid;
-    width: 60%;
+    background-image: url(img/Footer_Background_Curve.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     height: auto;
     padding: 2rem;
-    margin: 0 auto;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > ul {
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    margin: 2rem 0 6rem 0;
+}
+
+footer > ul > li {
+    width: 18rem;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+footer > ul > li > a:active {
+    text-decoration: line-through;
+}
+
+footer > h3 {
+    color: white;
+    margin: 6rem 0 0;
+    font-weight: 400;
+}
+
+footer > h2 {
+    font-size: 2rem;
+}
+
+.newsletter {
+    background-color: white;
+    width: 30%;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: 10rem;
 }
 
 /*buttons*/
