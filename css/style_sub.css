@@ -64,7 +64,7 @@ nav > ul {
 }
 
 .header_title {
-   width: 40vw;
+    width: 40vw;
     padding-left: 2em;
 }
 
@@ -85,6 +85,19 @@ footer {
     width: 15vw;
     height: 15vw;
     margin: 2rem;
+}
+
+.block-rec {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 11vw;
+    height: 11vw;
+    margin: 2rem;
+}
+
+.text-box {
+    width: 50vw;
+    height: 10vw;
 }
 
 footer {
@@ -184,7 +197,7 @@ h3 {
 
 h4 {
     font-family: var(--primary-font);
-    color:#707070;
+    color: #707070;
     font-size: 4rem;
     font-weight: 400;
     margin: 1rem;
@@ -194,7 +207,7 @@ h5 {
     font-family: var(--primary-font);
     font-size: 1rem;
     font-weight: 400;
-    color:#707070;
+    color: #707070;
 }
 
 p {
