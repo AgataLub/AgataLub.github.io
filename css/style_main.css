@@ -27,7 +27,7 @@ body {
 
 header {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     background-image: url();
     background-repeat: no-repeat;
     background-position: center;
@@ -38,8 +38,8 @@ header {
 
 .header_background {
     width: 100vw;
-    height: 70vh;
-    background-image: url();
+    height: 80vh;
+    background-image: url(img/Home_Image.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,13 +121,16 @@ button:active {
     background-color: var(--main-color);
 }
 
-.search {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+input {
+    font: 500 var(--primary-font);
+    letter-spacing: 1px;
+    cursor:text;
+    border-style: solid;
+    border-radius: 2rem;
+    background: white;
+    border-color: #707070;
+    padding: 0.5rem;
+    border: 1px solid;
 }
 
 /*
@@ -194,7 +197,7 @@ h3 {
 h4 {
     font-family: var(--primary-font);
     color: #707070;
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 400;
     margin: 1rem;
 }

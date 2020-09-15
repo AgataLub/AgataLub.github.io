@@ -121,6 +121,18 @@ button:active {
     background-color: var(--main-color);
 }
 
+input {
+    font: 500 var(--primary-font);
+    letter-spacing: 1px;
+    cursor:text;
+    border-style: solid;
+    border-radius: 2rem;
+    background: white;
+    border-color: #707070;
+    padding: 0.5rem;
+    border: 1px solid;
+}
+
 /*
 .secondary-button {
     background: rgba(255, 0, 0, 0);
