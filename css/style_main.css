@@ -30,7 +30,7 @@ header {
     height: 80vh;
     background-image: url();
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     z-index: 2;
     position: relative;
@@ -40,6 +40,20 @@ header {
     width: 100vw;
     height: 80vh;
     background-image: url(img/Home_Image.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.header_background2 {
+     width: 100vw;
+    height: 70vh;
+    background-image: url(img/Background_Curve.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,6 +160,11 @@ color: var(--cta-color);}
 nav > ul > li > a {
     text-decoration: none;
     color: var(--main-text-color);
+}
+
+nav > .ul2 > li > a {
+    text-decoration: none;
+    color: white;
 }
 
 nav > ul > li > a:hover {
