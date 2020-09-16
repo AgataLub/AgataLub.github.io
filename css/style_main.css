@@ -101,6 +101,18 @@ footer {
     margin: 2rem;
 }
 
+.block-rec {
+    padding: 1rem;
+    width: 11vw;
+    height: 11vw;
+    margin: 2rem;
+}
+
+.text-box {
+    width: 50vw;
+    height: 10vw;
+}
+
 footer {
     border: 1px black solid;
     width: 60%;
