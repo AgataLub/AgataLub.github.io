@@ -125,11 +125,11 @@ footer {
 }
 
 .block:hover {
-    filter:brightness(130%);
+    filter: brightness(130%);
 }
 
 .block_grey:hover {
-    filter:brightness(70%);
+    filter: brightness(70%);
 }
 
 .text-box {
@@ -592,4 +592,193 @@ em {
         /*  row start / column start / row end / column end  */
         grid-area: 9 / 1 / 10 / 3;
     }
+}
+
+
+/*Claudia*/
+/*LONNNNNNGG WAIT*/
+.productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productblock {
+    background-image: url(img/apps/7-eleven-logo-vector.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 5;
+    align-items:center;
+}
+
+.img {
+    grid-area: img;
+    width: 15vw;
+    height: 15vw;
+    z-index: 1;
+}
+
+.product_name {
+    z-index: 2;
+}
+
+.productlist > section {
+      display: grid;
+      max-width: 1200px;
+      margin: auto;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 60px;
+      margin-bottom: 60px;
+}
+
+img {
+    grid-area: img;
+    /*
+  max-width: 100%;
+  height: auto;
+*/
+    width: 15vw;
+    height: 15vw;
+    z-index: 1;
+}
+
+/*
+body {
+    margin: 0;
+}
+*/
+
+.productlist > section > h6 {
+    /*  grid-column: 1/-1;*/
+    /*  margin-bottom: -40px;*/
+}
+
+
+
+
+/* The Modal (background) */
+.hide {
+    display: none;
+}
+
+.modal {
+    /*    display: none;*/
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aside1 {
+    grid-area: aside1;
+    margin: auto;
+     text-align: center;
+    justify-content: center;
+}
+
+.aside2 {
+    grid-area: aside2;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.product_info {
+    grid-area: product_info;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    padding-top: 2rem;
+    grid-area: section2;
+}
+
+.block1 {
+    padding:2rem;
+    margin: 1rem;
+    width: 15vw;
+    height: 15vw;
+    justify-content: center;
+    vertical-align: middle;
+    grid-area: block1;
+    background-color: var(--main-color);
+}
+
+.product_name {
+    text-align: center;
+}
+
+.stars {
+    padding: inherit;
+}
+
+@media only screen and (min-width: 900px) {
+
+
+    .product_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "section1"
+            "section2";
+    }
+
+    .section2 {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "aside1 aside2";
+    }
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.productModal {
+    z-index: 5;
 }
