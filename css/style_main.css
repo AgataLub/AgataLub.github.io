@@ -3,7 +3,7 @@
 
 /*colors*/
 :root {
-    --main-color: #319b86;
+    --main-color: #71bcbc;
     --cta-color: #f2ca5a;
     --link-color: #df573e;
     --link-hover: #f2ca5a;
@@ -27,13 +27,14 @@ body {
 
 header {
     width: 100vw;
-    height: 80vh;
+    height: 40vh;
     background-image: url();
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
     z-index: 2;
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .header_background {
@@ -41,7 +42,7 @@ header {
     height: 80vh;
     background-image: url(img/Home_Image.svg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     position: absolute;
     left: 0px;
@@ -51,16 +52,16 @@ header {
 }
 
 .header_background2 {
-     width: 100vw;
-    height: 70vh;
-    background-image: url(img/Background_Curve.svg);
+    width: 100vw;
+    height: 40vh;
+    background-image: url(img/Background_Header_Curve.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
     left: 0px;
-    top: 0px;
-    right: 0px;
+    top: -50px;
+    right: 0;
     z-index: 1;
 }
 
@@ -85,6 +86,10 @@ nav > ul {
 .top,
 footer {
     text-align: center;
+}
+
+.home-top {
+    margin-top: 30rem;
 }
 
 .featured {
@@ -129,8 +134,9 @@ footer {
 
 footer > ul {
     list-style: none;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-content: space-between;
     align-items: center;
     margin: 2rem 0 6rem 0;
@@ -138,11 +144,12 @@ footer > ul {
 
 footer > ul > li {
     width: 18rem;
+    margin: 1rem 0;
 }
 
 footer > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: var(--cta-color);
     font-size: 1.5rem;
 }
 
@@ -201,7 +208,7 @@ button:active {
 input {
     font: 500 var(--primary-font);
     letter-spacing: 1px;
-    cursor:text;
+    cursor: text;
     border-style: solid;
     border-radius: 2rem;
     background: white;
@@ -262,7 +269,7 @@ a:hover {
 h1 {
     font-family: var(--special-font);
     font-size: 4rem;
-    color: var(--main-color);
+    color: var(--color-5);
 }
 
 h2 {
@@ -298,8 +305,9 @@ p {
     font-family: var(--primary-font);
     line-height: 1.5;
     max-width: 960px;
-    font-weight: 300;
+    font-weight: 100;
     color: #707070;
+    font-size: 1.2rem;
 }
 
 strong {
@@ -317,12 +325,17 @@ em {
     width: auto;
 }
 
+.group-pic-container {
+    min-width: 35vw;
+    max-width: 45rem;
+    margin: 3rem;
+}
 
 .group-pic {
     border-radius: 2rem;
-    max-width: 75rem;
+    width: 100%;
     height: auto;
-    margin: 5rem;
+    margin: 0;
 }
 
 /* ABOUT US */
@@ -332,10 +345,14 @@ em {
     justify-content: center;
     align-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-paragraph {
-    margin: 5rem;
+    margin: 0 3rem;
+    text-align: left;
+    padding: 0;
+    height: 100%;
 }
 
 /* ABOUT US > IG FEED */
@@ -344,7 +361,8 @@ em {
 .IG-feed {
     display: flex;
     justify-content: center;
-    margin-top: 24rem;
+    margin-top: 0rem;
+    flex-wrap: wrap;
 }
 
 /* Center text and allign in a colum */
@@ -354,10 +372,12 @@ em {
     justify-content: center;
     align-items: center;
     margin: 6rem;
+    max-width: 30rem;
 }
 
 .our-feed > h4 {
     text-align: center;
+    font-size: 3rem;
 }
 
 /* Display Images as in XD template */
@@ -367,12 +387,12 @@ em {
     grid-template-columns: repeat(5, 1fr);
     /* Make 2 rows with height according to pics' width */
     grid-template-rows: repeat(3, 0.35fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     /* Just to be sure: in case the grid lenght is less than the lenght of the grid container -> center grid in the container */
     justify-content: center;
     /* Same as above, but vertically */
     align-content: center;
-    max-width: 120rem;
+    max-width: 60rem;
     margin: 6rem;
 }
 
@@ -425,10 +445,111 @@ em {
 /* Make images fit the parent container */
 .IG-pics img {
     border-radius: 1.3rem;
-        object-fit: cover;
+    object-fit: cover;
     min-height: 100%;
     max-height: 100%;
     min-width: 100%;
     max-width: 100%;
 }
+
+/* CONTACT PAGE */
+
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: var(--main-color);
+    width: 30%;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-form > h2 {
+    color: white;
+}
+
+/* TABLET VERSION */
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+
+    .IG-pics {
+        grid-gap: 0.5rem;
+        margin: 0;
+    }
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 599px) {
+
+    .IG-feed {
+        margin: 0;
+    }
+
+    .IG-pics {
+        /* Make 6 columns 1fr wide */
+        grid-template-columns: repeat(2, 1fr);
+        /* Make 2 rows with height according to pics' width */
+        grid-template-rows: repeat(9, 0.25fr);
+        /* Just to be sure: in case the grid lenght is less than the lenght of the grid container -> center grid in the container */
+        grid-gap: 1rem;
+        margin: 0;
+    }
+
+    /* Assign specific rows and columns to grid's children */
+    .pic1 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .pic2 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .pic3 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .pic4 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .pic5 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 4 / 1 / 6 / 3;
+    }
+
+    .pic6 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .pic7 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 6 / 2 / 7 / 3;
+    }
+
+    .pic8 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 7 / 1 / 9 / 3;
+    }
+
+    .pic9 {
+        /*  row start / column start / row end / column end  */
+        grid-area: 9 / 1 / 10 / 3;
+    }
+}
+
 
