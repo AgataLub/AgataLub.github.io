@@ -27,13 +27,14 @@ body {
 
 header {
     width: 100vw;
-    height: 80vh;
+    height: 40vh;
     background-image: url();
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
     z-index: 2;
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .header_background {
@@ -52,15 +53,15 @@ header {
 
 .header_background2 {
     width: 100vw;
-    height: 70vh;
-    background-image: url(img/Background_Curve.svg);
+    height: 40vh;
+    background-image: url(img/Background_Header_Curve.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
     left: 0px;
-    top: 0px;
-    right: 0px;
+    top: -50px;
+    right: 0;
     z-index: 1;
 }
 
