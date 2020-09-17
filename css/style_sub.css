@@ -90,6 +90,18 @@ footer {
     margin: 2rem;
 }
 
+.block-rec {
+    padding: 1rem;
+    width: 11vw;
+    height: 11vw;
+    margin: 2rem;
+}
+
+.text-box {
+    width: 50vw;
+    height: 10vw;
+}
+
 footer {
     background-image: url(img/Footer_Background_Curve.svg);
     background-repeat: no-repeat;
@@ -255,6 +267,13 @@ h4 {
     font-size: 4rem;
     font-weight: 400;
     margin: 1rem;
+}
+
+h5 {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #707070;
 }
 
 p {
