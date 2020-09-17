@@ -90,6 +90,7 @@ footer {
 
 .home-top {
     margin-top: 30rem;
+    text-align: center;
 }
 
 .featured {
@@ -99,7 +100,6 @@ footer {
 }
 
 .block {
-    border: 1px solid black;
     padding: 2rem;
     width: 15vw;
     height: 15vw;
@@ -111,6 +111,25 @@ footer {
     width: 11vw;
     height: 10vw;
     margin: 2rem;
+}
+
+.block_grey {
+    padding: 2rem;
+    width: 15vw;
+    height: 15vw;
+    margin: 2rem;
+    filter: grayscale(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.block:hover {
+    filter:brightness(130%);
+}
+
+.block_grey:hover {
+    filter:brightness(70%);
 }
 
 .text-box {
@@ -169,6 +188,12 @@ footer > h3 {
 
 footer > h2 {
     font-size: 2rem;
+}
+
+.block > h3,
+.block_grey > h3 {
+    color: white;
+    font-size: 3.5vw;
 }
 
 .newsletter {
@@ -308,6 +333,7 @@ p {
     font-weight: 100;
     color: #707070;
     font-size: 1.2rem;
+    margin: 0 auto;
 }
 
 strong {
@@ -336,6 +362,22 @@ em {
     width: 100%;
     height: auto;
     margin: 0;
+}
+
+.bg1 {
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-edgarcastrejon3-pumpkinsoup-025-01.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=600&s=f3063c55195fd861ac65deb2af654cba);
+}
+
+.bg2 {
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a025-edgarc-28_1.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=800&s=6d5c399300f9da6ada103f30aa8acee8);
+}
+
+.bg3 {
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a025-edgarc-14-1.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=80&usm=15&vib=3&w=1300&s=21342f0e0a57bdeab3a553c88c238f76);
+}
+
+.bg4 {
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s64-greek-salad-with-spiralized-cucumber-6.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=800&s=d316fe690a24563cf2970fb0678b0b72);
 }
 
 /* ABOUT US */
@@ -455,7 +497,7 @@ em {
 /* CONTACT PAGE */
 
 .contact-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -551,5 +593,3 @@ em {
         grid-area: 9 / 1 / 10 / 3;
     }
 }
-
-
