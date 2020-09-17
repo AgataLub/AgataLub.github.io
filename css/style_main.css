@@ -3,7 +3,7 @@
 
 /*colors*/
 :root {
-    --main-color: #319b86;
+    --main-color: #71bcbc;
     --cta-color: #f2ca5a;
     --link-color: #df573e;
     --link-hover: #f2ca5a;
@@ -446,6 +446,32 @@ em {
     max-height: 100%;
     min-width: 100%;
     max-width: 100%;
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: var(--main-color);
+    width: 30%;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-form > h2 {
+    color: white;
 }
 
 /* TABLET VERSION */
