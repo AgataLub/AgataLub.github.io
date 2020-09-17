@@ -88,6 +88,10 @@ footer {
     text-align: center;
 }
 
+.home-top {
+    margin-top: 30rem;
+}
+
 .featured {
     display: flex;
     flex-wrap: wrap;
